@@ -1,0 +1,20 @@
+// doGet is essential for web app deployment, so DO NOT REMOVE
+function doGet() {
+
+ //Gets the active user's email
+ const userEmail = Session.getActiveUser().getEmail()
+ 
+  // Prompts the user for material type
+  var ui = SpreadsheetApp.getUi();
+  var result = ui.prompt('Hi, ' + userEmail + '! Would you like to create material(s), assingment(s), or announcment(s)?');
+  var button = result.getSelectedButton();
+  
+  // Gets the button(s) the user pressed and logs it
+  if (button === ui.Button.OK) {
+    Logger.log(result.getResponseText());
+    Logger.log(userEmail + " clicked the OK button.");
+  } else if (button === ui.Button.CLOSE) {
+    Logger.log(userEmail + " clicked the X button and closed the prompt dialog."); 
+    
+  }
+  }
