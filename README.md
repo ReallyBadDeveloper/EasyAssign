@@ -2,6 +2,8 @@ This is a program that, when run with an Apps Script project contained in a Goog
 
 > ![NOTE]
 > This repository is deprecated.
+
+
 ~----------------------------------------------ATTRIBUTION-----------------------------------------------------------------~
 
 Created by: Really Bad Dev (reallybaddeveloper@gmail.com for inquiries) entirely on Apps Script
